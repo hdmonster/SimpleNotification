@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="c.genius.pushnotification.MainActivity">
+
+    <TextView
+        android:id="@+id/txtAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTimePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:textSize="30sp"
+        android:text="No Alarm set" />
+
+    <TextView
+        android:id="@+id/alarmSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="480dp"/>
+
+    <Button
+        android:id="@+id/btnTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open time picker"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel alarm"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnTimePicker"
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:text="save"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_below="@+id/btnSave"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> Continue"
+        android:layout_toRightOf="@+id/btnUpdate"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="60dp"/>
+
+
+
+</RelativeLayout>
